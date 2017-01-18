@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rose_name: MyString
+  rose_color: MyString
+  origin_country: MyString
+
+two:
+  rose_name: MyString
+  rose_color: MyString
+  origin_country: MyString
