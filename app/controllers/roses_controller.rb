@@ -1,11 +1,26 @@
 class RosesController < ApplicationController
-  def the_first_rose
-    @first_rose = Rose.first
-    render "the_first_rose.html.erb"
+  
+  def index
+    @roses = Rose.all
+  
   end
 
-  def all_roses
-    @all_the_roses = Rose.all
-    render "all_roses.html.erb"
+  def new
   end
+
+  def show
+     @rose = Rose.find_by(id: params[:id])
+  end
+
+  
+
+  def create
+  rose_name = params[:rose_name]
+  rose_color = params[:rose_color]
+  origin_country = params[:origin_country]
+  rose = Rose.new({rose_name: rose_name, rose_color: rose_color, origin_country: origin_country})
+  rose.save
+end
+
+
 end 

@@ -1,0 +1,17 @@
+<h1>New Rose</h1>
+
+<%= form_tag "/roses", method: :post do %>
+  <div>
+    rose_name: <input type="text" name="rose_name">
+  </div>
+  <div>
+    rose_color: <input type="text" name="rose_color">
+  </div>
+  
+  <div>
+    origin_country: <input type="text" name="origin_country">
+  </div>
+  <div>
+    <input type="submit" name="Input a rose">
+  </div>
+<% end %>

@@ -1,0 +1,18 @@
+<h1>All the Roses</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Origin_country</th>
+    
+  </tr>
+  <% @roses.each do |rose| %>
+    <tr>
+      <td><%= rose.rose_name %></td>
+      <td><%= rose.rose_color %></td>
+      <td><%= rose.origin_country %></td>
+    
+      
+    </tr>
+  <% end %>
+</table>
